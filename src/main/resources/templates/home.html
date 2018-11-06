@@ -24,15 +24,15 @@
         				<form th:action="@{/user/addUser}" method="post">
         					<div class="row form-group">
         						<label class="col-sm-4">User Name</label>
-        						<input class="col-sm-8 form-control input-sm" type="text" name="username" />
+        						<input class="col-sm-8 form-control input-sm" type="text" name="username" required="required"/>
         					</div>
         					<div class="row form-group">
         						<label class="col-sm-4">Password </label>
-        						<input class="col-sm-8 form-control input-sm" type="password" name="password" pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" title="Must contain at least one number and letter, and at least 8 or more characters" required/>
+        						<input class="col-sm-8 form-control input-sm" type="password" name="password" pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" title="Must contain at least one number and letter, and at least 8 or more characters" required="required"/>
         					</div>
         					<div class="row form-group">
         						<label class="col-sm-4">Role </label>
-        						<input class="col-sm-8 form-control input-sm" type="text" name="role" />
+        						<input class="col-sm-8 form-control input-sm" type="text" name="role" required="required"/>
         					</div>
         					<div>
         						<button type="submit" class="btn btn-primary">Simpan</button>
